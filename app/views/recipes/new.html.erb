@@ -1,7 +1,7 @@
 <h1>Create Recipe</h1>
 <div><%= form_for @recipe do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %></div>
+  <%= f.label :recipe_title %>
+  <%= f.text_field :title, id: "recipe_title" %></div>
   Ingredients:
   <%= f.fields_for :ingredients do |i| %>
     <div><%= i.label :name %>
